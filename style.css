@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/Background1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+       
+}
+section {
+   border: 1px solid white;
+   background-color: #fff;
+    min-height: 80vh;
+    width:80% ;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 4px 4px hsl(0, 0%, 95%);
+    
+  
+}
+.cards {
+     position: absolute;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    font-family: 'Poppins', sans-serif;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+   
+
+    
+    
+
+ 
+}
+.card-sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+.icon{
+    padding: 40px;
+}
+h1{
+    padding-left: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em; 
+    color: #fff;
+}
+p{
+   
+    padding: 40px;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    
+}
+.btn{
+    margin-left: 40px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border: 0px solid;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+      
+}
+.card-sedans .btn{
+    color: hsl(31, 77%, 52%);
+}
+.card-suvs .btn{
+    color:hsl(184, 100%, 22%) ;
+}
+.card-luxury .btn {
+    color: hsl(179, 100%, 13%);
+    
+}
+
+.card-suvs{
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.card-luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+@media(max-width: 700px){
+    
+      
+    .cards {
+        position: absolute;
+        display: block;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+
+    }
+    .card-sedans{
+        border-radius: 5px 5px 0 0 ;
+    }
+.card-luxury{
+    border-radius: 0 0 5px 5px;
+       
+}
+
+}
+
+
+
+
+
